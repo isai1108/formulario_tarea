@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+</head>
+<body>
+	 <h1>INGRESE DATOS </h1>
+	<form action="ejemplo.php" method="get">
+  <p> 
+	<label for="nombre" > INGRESE SU NOMBRE </label><br>
+	<input type="text" name="nombre" id="nombre" size="20"
+	maxlength="10">
+</p>
+<p> 
+	<label for="nombre" > INGRESE SU CONTRASEÑA </label><br>
+	<input type="PASSWORD" name="clave" id="clave" size="20"
+	maxlength="10">
+</p>
+<h4> INDIQUE SU GENERO</h4>
+<P>
+	<input type="radio" name="genero" id="generoh" value="hombre">
+	<label for="generoh" > Hombre </label><br>
+	<input type="radio" name="genero" id="generom" value="Mujer">
+	<label for="generoh" > Mujer </label><br>
+	</P>
+<h4>DIAS DISPONIBLES</h4>
+<p>
+	<input type="checkbox" name="dias" id="lunes" value="lunes">
+	<label for="lunes" > lunes</label><br>
+
+	<input type="checkbox" name="dias" id="martes" value="martes">
+	<label for="martes" > martes</label><br>
+
+	<input type="checkbox" name="dias" id="miercoles" value="miercoles">
+	<label for="miercoles" > miercoles</label><br>
+
+	<input type="checkbox" name="dias" id="jueves" value="jueves">
+	<label for="jueves" > jueves</label><br>
+
+	<input type="checkbox" name="dias" id="viernes" value="viernes">
+	<label for="viernes" > viernes</label><br>
+
+</p>	
+
+<label for="tuemail">Tu email</label><br>
+<input type="email" name="tuemail" id="tuemail" placeholder="tuemail@tusitio.com"><br>
+<label for="url">INGRESE SU WEB</label><br>
+<input type="url" name="url" id="url" placeholder="http://www.tusitio.com">
+<label for="telefono">ingresar su telefono</label><br>
+<input type="tel" name="telefono" id="telefono">
+
+<label for="buscar">Buscar</label><br>
+<input type="search" name="buscar" id="buscar">
+<label for="cantidad">cantidad de producto</label><br>
+<input type="number" name="cantidad" id="cantidad" min="2" maxlength="10" step="1">
+<label for="experiencia"> Experiencia informatica</label><br>
+<input type="range" name="experiencia" min="0" max="50">
+</p>	
+
+<p> 
+	<fieldset>
+  <legend>calendario</legend>
+  <p>Por año/mes/dia/hora: <input type="date" name="fecha"> </p>
+    <p>Por año/mes/dia: <input type="datetime-local" name="fechaHora"> </p>
+  <p>Solo mes: <input type="month" name="mes"></p>
+  <p>Solo semana: <input type="week" name="semana"></p>
+  <p>Solo hora: <input type="time" name="hora"></p>
+</fieldset><br>
+</p>
+<p> 
+	<fieldset>
+  <legend>colores</legend>
+  <p>colores sin codigo:<input type="color" name="colorElegido"> </p>
+    <p>colores con codigo: <input type="color" name="colorElegido" value="#ff0000"> </p> 
+</fieldset><br>
+</p>
+<p>
+	<input type="submit" value="enviar datos">
+    <input type="reset" value="Borrar información">
+</p>
+</form>
+
+</body>
+</html>
